@@ -1,0 +1,8 @@
+<form (ngSubmit)="submit()" [formGroup]="form">
+  <select formControlName="dropdown">
+    <option>One</option>
+  </select>
+  <input type="text" formControlName="name">
+  <app-address-form formControlName="address"></app-address-form>
+  <button type="submit">Save</button>
+</form>
